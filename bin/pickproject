@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+getOsPrj() {
+    openstack project list -f value | fzf             
+}
+
+PICKED_PRJ=$(getOsPrj)
+export OS_PROJECT_ID=$(echo $PICKED_PRJ | cut -d ' ' -f 1)
+export OS_PROJECT_NAME=$(echo $PICKED_PRJ | cut -d ' ' -f 2)

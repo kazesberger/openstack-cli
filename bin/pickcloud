@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+script_name=$(basename $0)
+
+source $(ag -u -l "export OS_REGION" | grep -v $script_name | fzf )
