@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+pysocks = "*"
 ansible = "==2.7.6"
 openstacksdk = "==0.23.0"
 python-openstackclient = "==3.17.0"
@@ -15,7 +16,6 @@ python-designateclient = "==2.11.0"
 python-novaclient = "==11.1.0"
 python-keystoneclient = "==3.18.0"
 python-cinderclient = "==3.5.0"
-pysocks = "*"
 
 [requires]
 python_version = "2.7"
